@@ -29,8 +29,9 @@ De acordo com os requisitos estabelecidos, o sistema contempla as seguintes oper
 # 👨‍💻 Desenvolvedores
 
 | Nome | GitHub |
-|Wedson Gabriel| WedsonGabriel |
-|Jhonata Freitas | ALVIN | 
+| :--- | :--- |
+| Wedson Gabriel | https://github.com/WedsonGabriel |
+| Jhonata Freitas | https://github.com/ALVlN |
 
 ---
 
