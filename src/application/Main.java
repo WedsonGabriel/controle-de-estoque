@@ -84,7 +84,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Erro: Opção inválida!" + "\n");
             }
         }
         sc.close();
