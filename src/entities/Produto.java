@@ -8,6 +8,7 @@ public class Produto {
     private Integer quantidade;
     private Categoria categoria;
     private Fornecedor fornecedor;
+    private Integer estoqueMinimo = 5;
 
     // CONSTRUTORES
     public Produto() {}
@@ -39,6 +40,9 @@ public class Produto {
     public Fornecedor getFornecedor() {
         return fornecedor;
     }
+    public Integer getEstoqueMinimo() {
+        return estoqueMinimo;
+    }
     public void setId(Integer id) {
         this.id = id;
     }
@@ -56,6 +60,9 @@ public class Produto {
     }
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+    }
+    public void setEstoqueMinimo(Integer estoqueMinimo) {
+        this.estoqueMinimo = estoqueMinimo;
     }
 
     // MÉTODOS

@@ -35,8 +35,14 @@ public class Estoque {
                 int novaQuantidade = quantidadeAtual - valor;
                 produto.setQuantidade(novaQuantidade);
                 System.out.println("Saída de " + valor + " unidades de " + produto.getNome() + " registrada");
-                System.out.println("O estoque atual de " + produto.getNome() + " é de " + novaQuantidade + "unidades" + "\n");
-            } else {
+                System.out.println("O estoque atual de " + produto.getNome() + " é de " + novaQuantidade + " unidades" + "\n");
+
+                if (novaQuantidade <= produto.getEstoqueMinimo()) {
+                    System.out.println("Alerta: A quantidade de " + produto.getNome() +  " está abaixo do estoque mínimo. É necessário reabastecer, urgentemente, o produto" + "\n");
+                }
+            }
+
+            else {
                 System.out.println("Erro: Você tentou vender " + valor + " unidades de " + produto.getNome() +  ", mas só existem " + quantidadeAtual + " unidades desse produto disponíveis no estoque atualmente." + "\n");
             }
         } else {
